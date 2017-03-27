@@ -1,0 +1,23 @@
+
+
+<html>
+<body>
+
+<div id="home"></div>
+
+
+</body>
+
+<script> 
+
+var sWidth = 200, sHeight = 200, html = "";
+for (var y= -sWidth / 2 ;y< sWidth; y++) {
+    html += "<div>";
+    for (var x= -sWidth / 2 ;x< sWidth; x++) {
+        html += "<div id='#sWidth:sHeight' class='pixel' ></div>" ;
+    }
+    html += "</div>";
+}
+
+</script>
+</html>
