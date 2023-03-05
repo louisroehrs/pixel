@@ -72,14 +72,14 @@
     return font;
   }
 
-  const textScrollingLength = 500;
+  const textScrollingLength = 800;
   const getTextImageData = (canvas, font, text) => {
     const ctx = canvas.getContext('2d');
     ctx.font = `50px ${font}`;
     ctx.clearRect(0,0,textScrollingLength,150);
     ctx.fillText(text, 0, 80);
-    ctx.getImageData(0,0,textScrollingLength,130);
-    const data32 = new Uint32Array(ctx.getImageData(0, 0, textScrollingLength, 100).data.buffer);
+    ctx.getImageData(0,0,textScrollingLength,150);
+    const data32 = new Uint32Array(ctx.getImageData(0, 0, textScrollingLength, 150).data.buffer);
     return data32;
   }
 
